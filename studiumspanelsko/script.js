@@ -58,8 +58,8 @@ async function loadPage(page) {
                 <p data-i18n="paragraph1">This is the first paragraph of text.</p>
                 <p data-i18n="paragraph2">This is the second paragraph of text.</p>
                 <form id="emailForm">
-                    <input type="email" id="email" placeholder="Your Email" required>
-                    <textarea id="question" placeholder="Your Question" required></textarea>
+                    <input type="email" id="email" placeholder="Mail" required>
+                    <textarea id="question" placeholder="..." required></textarea>
                     <select id="preferredLanguage">
                         <option value="cz">čeština</option>
                         <option value="sk">slovenčina</option>
