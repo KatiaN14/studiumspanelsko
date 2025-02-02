@@ -5,7 +5,7 @@ const mainContent = document.querySelector('.main-content');
 const sidebarLinks = document.querySelectorAll('.sidebar a');
 const logo = document.querySelector('.sidebar .logo');
 const languageSwitcher = document.querySelector('.language-switcher');
-let currentLanguage = localStorage.getItem('language') || 'en';
+let currentLanguage = localStorage.getItem('language') || 'cz';
 
 // ======================
 // Language Functions
