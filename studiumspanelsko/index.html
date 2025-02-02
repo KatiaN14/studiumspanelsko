@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html>
+<html lang="cz">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Welcome to Firebase Hosting</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Studium Spanelsko</title>
 
     <!-- update the version number as needed -->
     <script defer src="/__/firebase/11.2.0/firebase-app-compat.js"></script>
@@ -22,9 +22,48 @@
       to avoid connecting the SDK to running emulators.
     -->
     <script defer src="/__/firebase/init.js?useEmulator=true"></script>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
   </head>
   <body>
-    <h1>Španělské univerzity</h1>
-    <h2>Studuj s námi</h2>
+
+    <button class="menu-button" onclick="toggleMenu()">☰</button>
+    <div class="container">
+        <!-- Static Column -->
+        <div class="sidebar">
+            <img src="assets/logo.png" alt="Logo" class="logo">  
+            <ul>
+              <li><a href="#" data-page="useful-info" data-i18n="useful-info">Useful Info</a></li>
+              <li><a href="#" data-page="todo-list" data-i18n="todo-list">Todo List</a></li>
+              <li><a href="#" data-page="faq" data-i18n="faq">FAQ</a></li>
+              <li><a href="#" data-page="contact" data-i18n="contact">Contact</a></li>
+            </ul>
+        </div>
+
+        <div class="content-wrapper">
+
+        <!-- Language Switcher -->
+        <div class="language-switcher">
+            <button onclick="changeLanguage('cz')">CZ</button>
+            <button onclick="changeLanguage('sk')">SK</button>
+            <button onclick="changeLanguage('esp')">ESP</button>
+            <button onclick="changeLanguage('en')">ENG</button>
+        </div>
+      
+
+        <div class="main-content">
+        </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
   </body>
 </html>
+
+<!--
+  how to make changes:
+git add .
+git commit -m "MESSAGE"
+git push origin master
+
+-->
