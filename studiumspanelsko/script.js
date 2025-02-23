@@ -71,7 +71,7 @@ async function loadPage(page) {
                 <h2 data-i18n="contact_us">Contact Us</h2>
                 <div class="team">
                     <div class="member">
-                        <img src="assets/person1.png" alt="Person 1">
+                        <img src="assets/kata.png" alt="Person 1">
                         <p data-i18n="name1">Highschool: XYZ, University: ABC, Degree: BSc</p>
                         <p data-i18n="tel1">tel:</p>
                         <p data-i18n="school1">highschool</p>
@@ -80,7 +80,7 @@ async function loadPage(page) {
                         <p data-i18n="spain1">2023</p>
                     </div>
                     <div class="member">
-                        <img src="assets/person2.jpg" alt="Person 2">
+                        <img src="assets/maty.jpg" alt="Person 2">
                         <p data-i18n="name2">Highschool: XYZ, University: ABC, Degree: BSc</p>
                         <p data-i18n="tel2">tel:</p>
                         <p data-i18n="school2">highschool</p>
@@ -98,7 +98,7 @@ async function loadPage(page) {
                         <p data-i18n="spain3">2023</p>
                     </div>
                     <div class="member">
-                        <img src="assets/person4.jpg" alt="Person 4">
+                        <img src="assets/kaja.jpg" alt="Person 4">
                         <p data-i18n="name4">Highschool: XYZ, University: ABC, Degree: BSc</p>
                         <p data-i18n="tel4">tel:</p>
                         <p data-i18n="school4">highschool</p>
@@ -122,8 +122,43 @@ async function loadPage(page) {
             break;
         case 'useful-info':
             mainContent.innerHTML = `
-                <h1 data-i18n="useful-info-h1">About Us</h1>
-                <p data-i18n="auseful-paragraph">This is the about us page.</p>
+                <h1 data-i18n="infoh1">H1</h1>
+                    <p data-i18n="infop1">p1</p>
+                <h2 data-i18n="info2kolik">H2</h2>
+                    <p data-i18n="infop2">p2</p>
+                <h2 data-i18n="info3sance">H3</h2>
+                    <p data-i18n="infop3">p3</p>
+                <h2 data-i18n="info4kdy">H4</h2>
+                    <p data-i18n="infop4">p4</p>
+                    <ul>
+                        <li data-i18n="info4a1">a1</li>
+                        <li data-i18n="info4a2">a2</li>
+                    </ul>
+                    <p data-i18n="info4b">b</p>
+                <h2 data-i18n="info5jakvypada">H5</h2>
+                    <p data-i18n="infop5">p5</p>
+                <h2 data-i18n="info6pozor">H6</h2>
+                    <p data-i18n="infop61">p6</p>
+                    <p data-i18n="infop62">p6</p>
+                    <p data-i18n="infop63">p6</p>
+                    <p data-i18n="infop64">p6</p>
+                    <p data-i18n="infop65">p6</p>
+                    <p data-i18n="infop66">p6</p>
+                    <p data-i18n="infop67">p6</p>
+                    <p data-i18n="infop68">p6</p>
+                    <p data-i18n="infop69">p6</p>
+                    <p data-i18n="infop610">p6</p>
+                <h2 data-i18n="info7zarucuje">H7</h2>
+                    <p data-i18n="infop7">p7</p>
+                <ul>
+                    <li data-i18n="info7a1">a1</li>
+                    <li data-i18n="info7a2">a2</li>
+                    <li data-i18n="info7a3">a3</li>
+                </ul>
+                    <p data-i18n="infop72">b</p>
+                <h2 data-i18n="info8prijit">H8</h2>
+                    <p data-i18n="infop8">p8</p>
+                <p data-i18n="infokonec">p9</p>
             `;
             break;
         case 'contact':
