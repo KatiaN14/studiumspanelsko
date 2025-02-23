@@ -63,9 +63,9 @@ body {
 @media (max-width: 768px) {
     .main-content {
         max-width: 90vw;
-        padding: 3px;
+        padding: 5px;
         box-sizing: border-box;
-        margin: 3px; /* Remove any space reserved for the sidebar */
+        margin: 5px; /* Remove any space reserved for the sidebar */
     }
 }
 
@@ -206,7 +206,7 @@ form button {
     .alcala-img{
         float: none;
         display: block;
-        margin: 10px auto;
+        margin: 10px;
         max-width: 50px;
         height: auto;
     }
