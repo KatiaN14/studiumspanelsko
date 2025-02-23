@@ -9,6 +9,7 @@
     <!-- update the version number as needed -->
     <script defer src="/__/firebase/11.2.0/firebase-app-compat.js"></script>
     <!-- include only the Firebase features as you need -->
+    <!--
     <script defer src="/__/firebase/11.2.0/firebase-auth-compat.js"></script>
     <script defer src="/__/firebase/11.2.0/firebase-database-compat.js"></script>
     <script defer src="/__/firebase/11.2.0/firebase-firestore-compat.js"></script>
@@ -18,6 +19,7 @@
     <script defer src="/__/firebase/11.2.0/firebase-analytics-compat.js"></script>
     <script defer src="/__/firebase/11.2.0/firebase-remote-config-compat.js"></script>
     <script defer src="/__/firebase/11.2.0/firebase-performance-compat.js"></script>
+    -->
     <!-- 
       initialize the SDK after all desired features are loaded, set useEmulator to false
       to avoid connecting the SDK to running emulators.
@@ -34,26 +36,25 @@
         <div class="sidebar">
             <img src="assets/logo.png" alt="Logo" class="logo">  
             <ul>
-              <li><a href="#" data-page="useful-info" data-i18n="useful-info">Useful Info</a></li>
-              <li><a href="#" data-page="todo-list" data-i18n="todo-list">Todo List</a></li>
-              <li><a href="#" data-page="faq" data-i18n="faq">FAQ</a></li>
-              <li><a href="#" data-page="contact" data-i18n="contact">Contact</a></li>
+              <li><a href="#" data-page="alcala" data-i18n="alcala">Useful Info</a></li>
+              <li><a href="#" data-page="studyspain" data-i18n="studyspain">Todo List</a></li>
+              <li><a href="#" data-page="todo" data-i18n="todo">FAQ</a></li>
+              <li><a href="#" data-page="vocab" data-i18n="vocab">Contact</a></li>
             </ul>
         </div>
 
         <div class="content-wrapper">
 
-        <!-- Language Switcher -->
-        <div class="language-switcher">
+          <!-- Language Switcher -->
+          <div class="language-switcher">
             <button onclick="changeLanguage('cz')">CZ</button>
             <button onclick="changeLanguage('sk')">SK</button>
-            <button onclick="changeLanguage('esp')">ESP</button>
-            <button onclick="changeLanguage('en')">ENG</button>
-        </div>
+            <!--<button onclick="changeLanguage('esp')">ESP</button>
+            <button onclick="changeLanguage('en')">ENG</button> -->
+          </div>
       
 
-        <div class="main-content">
-        </div>
+          <div class="main-content"></div>
         </div>
     </div>
 
@@ -64,7 +65,7 @@
 <!--
   how to make changes:
 git add .
-git commit -m "change default language to czech"
+git commit -m "dokonceni prvni funkcni verze"
 git push origin master
 
 

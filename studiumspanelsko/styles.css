@@ -1,5 +1,10 @@
-body {
+* {
+    margin: 0;
+    padding: 0;
     font-family: 'Roboto', sans-serif;
+}
+
+body {
     margin: 0;
     padding: 0;
     background-color: #EEF0F2;
@@ -17,11 +22,13 @@ body {
     padding: 20px;
     height: 100vh;
     position: fixed;
+    transition: 0.2s;
 }
 
 .sidebar .logo {
     width: 100%;
     margin-bottom: 2px;
+    
 }
 
 .sidebar ul {
@@ -33,7 +40,7 @@ body {
     margin: 15px 0;
 }
 
-.sidebar ul li a {
+/**.sidebar ul li a {
     color: #E84855;
     text-decoration: none;
     font-size: 18px;
@@ -41,7 +48,7 @@ body {
 
 .sidebar ul li a:hover {
     color: #003554;
-}
+}*/
 
 .main-content {
     margin-top: 60px;
@@ -49,12 +56,16 @@ body {
     margin-right: 100px;
     padding: 20px;
     flex-grow: 1;
+    max-width: 90vw;
+    box-sizing: border-box;
 }
 
 @media (max-width: 768px) {
     .main-content {
-        width: 100%;
-        margin-left: 0; /* Remove any space reserved for the sidebar */
+        max-width: 90vw;
+        padding: 3px;
+        box-sizing: border-box;
+        margin: 3px; /* Remove any space reserved for the sidebar */
     }
 }
 
@@ -87,6 +98,7 @@ body {
 
 h1, h2 {
     color: #3590F3;
+    margin: 10px;
 }
 
 form {
@@ -154,10 +166,19 @@ form button {
 @media (max-width: 768px) {
     .sidebar {
         display: none;
+        
+    }
+
+    .sidebar img {
+        margin-top: 5vh;
     }
 
     .menu-button {
         display: block;
+    }
+
+    h1{
+        margin-top: calc(20px + 10px + 5vh);
     }
 }
 
@@ -174,6 +195,7 @@ form button {
     cursor: pointer;
     z-index: 1000; /* Ensures it stays above other elements */
     display: none; /* Hide by default on big screens */
+    border-radius: 5px;
 }
 
 /* Show button only on small screens */
@@ -181,5 +203,44 @@ form button {
     .menu-button {
         display: block;
     }
+    .alcala-img{
+        float: none;
+        display: block;
+        margin: 10px auto;
+        max-width: 50px;
+        height: auto;
+    }
 }
 
+p, li {
+    margin: 8px;
+}
+
+a {
+    color: #E84855;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+a:hover {
+    color: #003554;
+}
+
+.alcala-img {
+    max-width: 350px;
+    height: auto;
+    float: right;
+    margin: 10px;
+}
+
+figure{
+    text-align: center;
+    float: right;
+}
+
+figure figcaption {
+    color: #666;
+    font-size: 14px;
+    text-align: center;
+    margin-top: 5px;
+}
